@@ -14,7 +14,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100dvh;
-	font-size: 16px;
+	font-size: 2rem;
 	font-family: "Outfit", sans-serif;
 }
 
@@ -43,4 +43,39 @@ body {
 	background-color: var(--white);
 	border-radius: 1rem;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.form,
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.form label {
+	color: var(--black);
+}
+
+.form select {
+	background-color: #ecebeb;
+	border: none;
+	padding: 1rem;
+	border-radius: 1rem;
+	font-size: 1.6rem;
+}
+
+.form input[type="submit"] {
+	background-color: var(--primary);
+	color: var(--black);
+	border: none;
+	padding: 1rem;
+	font-weight: 900;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-top: 2rem;
+	transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #0cb387;
 }
